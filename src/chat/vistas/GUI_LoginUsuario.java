@@ -80,7 +80,9 @@ public class GUI_LoginUsuario extends JFrame
     
     public void btnConectarseActionPerformed()
     {
-        login.iniciarSesion();
+        String user = txtUser.getText();
+        String pass = txtPassword.getText();
+        login.iniciarSesion(user, pass);
     }
     
     public void btnRegistrarseActionPerformed()

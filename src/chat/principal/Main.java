@@ -1,8 +1,6 @@
 package chat.principal;
 
-import chat.controladores.ChatCliente;
 import chat.controladores.Login;
-import chat.utilidades.Usuario;
 
 /**
  *
@@ -11,8 +9,8 @@ import chat.utilidades.Usuario;
 public class Main 
 {
     public static void main(String[] args) {
-        //Login l = new Login();
-        ChatCliente chatCliente = new ChatCliente(new Usuario("Silvana","1234"));
+        Login l = new Login();
+        //ChatCliente chatCliente = new ChatCliente(new Usuario("Silvana","1234"));
         
     }
 }

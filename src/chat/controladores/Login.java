@@ -1,11 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package chat.controladores;
+
+import chat.modelos.ModelLogin;
 import chat.utilidades.*;
 import chat.vistas.*;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,6 +13,7 @@ public class Login
 {
     private GUI_LoginUsuario gui_login;
     private Usuario user;
+    private ModelLogin modelLogin;
     
     
     public Login()
@@ -30,8 +29,31 @@ public class Login
         gui_login.setVisible(true);
     }
     
-    public void iniciarSesion()
+    public void iniciarSesion(String usuario, String password)
     {
+        boolean validacionOk = true;
+        if (Validador.validarVacio(usuario)) 
+        {
+            JOptionPane.showMessageDialog(gui_login, "El usuario no puede ser vacío");
+            validacionOk = false;
+            return;
+        }
+        
+        if (Validador.validarVacio(password)) 
+        {
+            JOptionPane.showMessageDialog(gui_login, "La contraseña no puede estar vacía");
+            validacionOk = false;
+            return;
+        }
+        
+        if (true) {
+            
+        }
+        
+        if (validacionOk) {
+            
+        }
+        
         
     }
     

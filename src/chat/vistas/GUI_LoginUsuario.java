@@ -21,8 +21,6 @@ public class GUI_LoginUsuario extends JFrame
     {
         this.login = login;
         initComponents();
-        
-        
     }
     
     public void initComponents()

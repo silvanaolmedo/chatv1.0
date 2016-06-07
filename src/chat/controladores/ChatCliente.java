@@ -10,6 +10,7 @@ public class ChatCliente
     
     public ChatCliente(Usuario user)
     {
+        vistaChat = new GUI_Chat(this);
         
     }
     

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package chat.utilidades;
 
 /**
@@ -13,7 +8,7 @@ public class  Validador
 {
     public static boolean validarVacio(String s)
     {
-        return !(s.isEmpty());
+        return s.isEmpty();
     }
     
 //    public static boolean validarPassword(String password)

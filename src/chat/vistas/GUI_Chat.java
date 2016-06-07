@@ -1,6 +1,8 @@
 
 package chat.vistas;
 import chat.controladores.ChatCliente;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 
@@ -23,6 +25,7 @@ public class GUI_Chat extends JFrame
     
     public void initComponents()
     {
+        setTitle("Chat v1.0");
         setBounds(100, 100, 700, 530);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -63,7 +66,17 @@ public class GUI_Chat extends JFrame
         btnEnviar.setBounds(490,430,90,25);
         jPanel.add(btnEnviar);
         
+        btnEnviar.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e)
+            {
+                    
+            }
+        });
         setVisible(true);
     }
     
+    public void bntEnviarActionPerformed()
+    {
+        chatCliente.enviar(txtMensaje.getText());
+    }
 }

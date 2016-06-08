@@ -50,8 +50,9 @@ public class Login
             
         }
         
-        if (validacionOk) {
-            
+        if (validacionOk) 
+        {
+            ChatCliente chatCliente = new ChatCliente("127.0.0.1",5000,user);
         }
         
         

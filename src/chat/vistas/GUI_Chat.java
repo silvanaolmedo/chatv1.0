@@ -69,14 +69,24 @@ public class GUI_Chat extends JFrame
         btnEnviar.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e)
             {
-                    
+                btnEnviarActionPerformed();
             }
         });
         setVisible(true);
     }
     
-    public void bntEnviarActionPerformed()
+    public void btnEnviarActionPerformed()
     {
         chatCliente.enviar(txtMensaje.getText());
+    }
+    
+    public JTextField getTxtMensaje()
+    {
+        return txtMensaje;
+    }
+    
+    public JTextArea getJTextAreaMensajes()
+    {
+        return jTextAreaMensajes;
     }
 }

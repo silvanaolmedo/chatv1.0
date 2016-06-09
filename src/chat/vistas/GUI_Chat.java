@@ -72,7 +72,7 @@ public class GUI_Chat extends JFrame
                 btnEnviarActionPerformed();
             }
         });
-        setVisible(true);
+        //setVisible(true);
     }
     
     public void btnEnviarActionPerformed()
